@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+/*---------- Temporal ----------*/
+
+body {
+    background-image: url(./img/back2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*---------- Detalles ----------*/
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(0, 0, 255);
+    margin-top: 5px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: .9em;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(128, 111, 43);
+    margin-top: -8px;
+    margin-left: 5px;
+}
+
+/*---------- Diseño - Pokedex ----------*/
+
+.contenedor {
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.c1 {
+    width: 657px;
+    height: 450px;
+    background-color: rgb(221,8,47);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoja1, .hoja2 {
+    width: 310px;
+    height: 430px;
+    background-color: rgb(129, 21, 41);
+}
+
+.hoja1 {
+    border-radius: 10% 0 0 10%;
+}
+
+.hoja1 .led div{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: black;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.hoja1 .led .circle1 {
+    background-color: rgb(221, 8, 47);
+}
+
+.hoja1 .led .circle2 {
+    background-color: rgb(255, 204, 2);
+}
+
+.hoja1 .led .circle3 {
+    background-color: rgb(47, 249, 1);
+}
+
+.led {
+    display: flex;
+    justify-content: center;
+}
+
+.hoja1 .lcd div {
+    width: 180px;
+    height: 150px;
+    margin: 5px;
+}
+
+/*---------- Imagen ----------*/
+
+.lcd {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgb(176, 176, 176);
+    background-image: url(./img/q.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hoja1 .lcd .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------- Input ----------*/
+
+.hoja1 .lcd .data {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    font-size: .6em;
+    margin: auto;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.hoja1 .consulta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.consulta input {
+    width: 180px;
+    height: 40px;
+    border-radius: 5% 5% 5% 5%;
+    color: white;
+    background-color: rgb(255, 204, 2);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*---------- Boton ----------*/
+
+.consulta button {
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: rgb(40, 171, 253);
+    border: 5px solid rgb(222, 222, 222);
+    color: white;
+    padding: 10px 10px;
+    text-shadow: 2px 2px rgb(7, 76, 141);
+}
+
+.consulta button:hover {
+    background-color: rgb(21, 103, 154);
+    border: 5px solid rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+/*---------- Divisor ----------*/
+
+.divisor {
+    width: 9px;
+    height: 450px;
+    background-color: black;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.hoja2 {
+    border-radius: 0 10% 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input2 {
+    margin-top: 10px;
+    width: 213px;
+    height: 80px;
+    background-color: rgb(35, 35, 35);
+    border: 2px solid;
+    border-radius: 4%;
+    margin-bottom: 7%;
+    font-size: .7em;
+}
+
+/*---------- Teclado ----------*/
+
+.abc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+.abc button {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(40, 171, 253);
+    border: 1px solid rgb(33, 101, 236);
+    color: black;
+    font-size: .7em;
+}
+
+.abc .space {
+    width: 50px;
+    height: 25px;
+}
+
+.abc button:hover {
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.sound {
+    display: flex;
+}
+
+.hoja2 .sound div {
+    width: 71px;
+    height: 5px;
+    background-color:rgb(35, 35, 35);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.play {
+    margin-top: 30px;
+    width: 213px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.select {
+    display: flex;
+}
+
+.hoja2 .select div {
+    width: 40px;
+    height: 32px;
+    background-color: rgb(222, 222, 222);
+    border: black;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.select {
+    margin: auto;
+}
+
+.ok div {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.ok {
+    margin: auto;
+}
+
+.hoja2 .panels {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.hoja2 .panels div {
+    width: 89px;
+    height: 33px;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
